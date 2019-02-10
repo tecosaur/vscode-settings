@@ -1,0 +1,43 @@
+{
+  "recommendations": [
+    // general
+    "alefragnani.Bookmarks",
+    "CoenraadS.bracket-pair-colorizer-2",
+    "CoenraadS.disableligatures",
+    "fabiospampinato.vscode-highlight",
+    "fabiospampinato.vscode-todo-plus",
+    "IBM.output-colorizer",
+    "ms-vsliveshare.vsliveshare",
+    "kruemelkatze.vscode-dashboard",
+    // utility - functionality
+    "vmsynkov.colonize",
+    "acarreiro.calculate",
+    "yzhang.dictionary-completion",
+    "janjoerke.align-by-regex",
+    "adammaras.overtype",
+    "VisualStudioExptTeam.vscodeintellicode",
+    // utility - informative
+    "streetsidesoftware.code-spell-checker",
+    "donjayamanne.githistory",
+    "eamodio.gitlens",
+    "lamartire.git-indicators",
+    // language specific
+    "James-Yu.latex-workshop",
+    "mrmlnc.vscode-apache",
+    "ms-python.python",
+    "ms-vscode.cpptools",
+    "eg2.tslint",
+    "esbenp.prettier-vscode",
+    "njpwerner.autodocstring",
+    "almenon.arepl",
+    "henoc.svgeditor",
+    "GrapeCity.gc-excelviewer",
+    "yzhang.markdown-all-in-one",
+    // themes
+    "monokai.theme-monokai-pro-vscode",
+    "zhuangtongfa.Material-theme",
+    "uloco.theme-bluloco-light",
+    "Equinusocio.vsc-material-theme",
+    "PKief.material-icon-theme"
+  ]
+}

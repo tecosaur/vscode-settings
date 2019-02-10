@@ -1,0 +1,312 @@
+{
+  "editor.fontLigatures": true,
+  "window.zoomLevel": 1.2,
+  "editor.fontSize": 16,
+  "editor.fontFamily": "Fira Code",
+  "workbench.colorTheme": "Monokai Pro",
+  "workbench.iconTheme": "Monokai Pro Icons",
+  "window.titleBarStyle": "custom",
+  "workbench.statusBar.feedback.visible": false,
+
+  // ————————————————————————————
+  // Editor Feel
+  // ————————————————————————————
+  "breadcrumbs.enabled": true,
+  "window.enableMenuBarMnemonics": false,
+  "editor.snippetSuggestions": "top",
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.cursorBlinking": "phase",
+  "editor.suggestSelection": "recentlyUsedByPrefix",
+  "editor.wordBasedSuggestions": true,
+  "editor.tabCompletion": "onlySnippets",
+  "editor.formatOnSave": true,
+  "editor.emptySelectionClipboard": false,
+  "editor.quickSuggestionsDelay": 0,
+  "editor.wordSeparators": "`-~!@#$%^&*()=+[\\{]\\}\\|;:'\",.<>/?",
+  "files.exclude": {
+    "**/._*": true,
+    // For LaTeX generated files
+    "**/*.synctex.gz": true,
+    "**/*.fls": true,
+    "**/*.fdb_latexmk": true,
+    "**/*.aux": true
+  },
+  "files.associations": {
+    "*.latex": "latex"
+  },
+  "files.insertFinalNewline": true,
+  // ————————————————————————————
+  // File-type specific
+  // ————————————————————————————
+  "[latex]": {
+    "editor.wordWrap": "on",
+    "editor.fontFamily": "IBM Plex Sans", // or: Verdana, Comic Sans MS
+    "editor.fontSize": 18,
+    "editor.letterSpacing": 0.15
+  },
+  "bracket-pair-colorizer-2.excludedLanguages": ["latex"],
+  "[markdown]": {
+    "editor.wordWrap": "on"
+    // "editor.fontFamily": "IBM Plex Sans", // or: Verdana, Comic Sans MS
+    // "editor.fontSize": 18,
+    // "editor.letterSpacing": 0.15
+  },
+  // JSON level colour coding
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "name": "JSON Key - Level 0",
+        "scope": [
+          "source.json meta.structure.dictionary.json support.type.property-name.json"
+        ],
+        "settings": {
+          "foreground": "#F6FCFA"
+        }
+      },
+      {
+        "name": "JSON Key - Level 1",
+        "scope": [
+          "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
+        ],
+        "settings": {
+          "foreground": "#78DCE8"
+        }
+      },
+      {
+        "name": "JSON Key - Level 2",
+        "scope": [
+          "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
+        ],
+        "settings": {
+          "foreground": "#A9DC76"
+        }
+      },
+      {
+        "name": "JSON Key - Level 3",
+        "scope": [
+          "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
+        ],
+        "settings": {
+          "foreground": "#FC9867"
+        }
+      },
+      {
+        "name": "JSON Key - Level 4",
+        "scope": [
+          "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
+        ],
+        "settings": {
+          "foreground": "#78DCE8"
+        }
+      },
+      {
+        "name": "JSON Key - Level 5",
+        "scope": [
+          "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
+        ],
+        "settings": {
+          "foreground": "#A9DC76"
+        }
+      },
+      {
+        "name": "JSON Key - Level 6",
+        "scope": [
+          "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
+        ],
+        "settings": {
+          "foreground": "#FC9867"
+        }
+      }
+    ]
+  },
+  // ————————————————————————————
+  // Terminal
+  // ————————————————————————————
+  "terminal.integrated.fontFamily": "Hack Nerd Font Mono",
+  "terminal.integrated.cursorBlinking": true,
+  // ————————————————————————————
+  // Extension specific settings
+  // ————————————————————————————
+  "dictCompletion.leastNumOfChars": 2,
+  //   "spellright.recheckOnSave": false,
+  "latex-workshop.view.pdf.viewer": "tab",
+  // "html-css-class-completion.enableEmmetSupport": true,
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.showSuggestionsAsSnippets": true,
+  "python.autoComplete.addBrackets": true,
+  "python.terminal.executeInFileDir": true,
+  "python.jediEnabled": false,
+  // "java.home": "C:\\Program Files\\Java\\jdk-10.0.1",
+  // "maven.terminal.useJavaHome": true,
+  "files.trimTrailingWhitespace": true,
+  "gitlens.advanced.messages": {
+    "suppressShowKeyBindingsNotice": true
+  },
+  "org.todoKeywords": ["TODO", "DONE", "PRGS", "WAIT", "SCHD"],
+  "todo.colors.types": {
+    "TODO": "#ffcc00",
+    "FIXME": "#cc0000",
+    "FIX": "#cc0000",
+    "BUG": "#cc0000",
+    "UGLY": "#cc0000",
+    "DEBUG": "#cc0000",
+    "HACK": "#cc0000",
+    "REVIEW": "#00ccff",
+    "OPTIMIZE": "#00ccff",
+    "TSC": "#00ccff",
+    "NOTE": "#cc00cc",
+    "IDEA": "#cc00cc",
+    "ADD": "#8C8",
+    "MISSING": "#689cff"
+  },
+  "todo.embedded.regex": "(?:<!— *)?(?:#|//|/\\*+|<!—|—|%) *(TODO|FIXME|FIX|BUG|UGLY|HACK|NOTE|IDEA|REVIEW|DEBUG|OPTIMIZE|MISSING|ADD)(?:\\([^(]+\\))?:?(?!\\w)(?: *—>| *\\*/|(?= *(?:[^:]//|/\\*+|<!—|@|—))|((?: +[^\n@]*?)(?= *(?:[^:]//|/\\*+|<!—|@|—))|(?: +[^@\n]+)?))",
+  "todo.embedded.providers.rg.regex": "(?:#|//|/\\*+|<!—|—|%) *(TODO|FIXME|FIX|BUG|UGLY|HACK|NOTE|IDEA|REVIEW|DEBUG|OPTIMIZE|MISSING|ADD)",
+  "todo.embedded.providers.ag.regex": "(?:#|//|/\\*+|<!—|—|%) *(TODO|FIXME|FIX|BUG|UGLY|HACK|NOTE|IDEA|REVIEW|DEBUG|OPTIMIZE|MISSING|ADD)",
+  "latex-workshop.chktex.enabled": true,
+  "latex-workshop.hoverPreview.cursor.symbol": "\\!|\\!",
+  "latex-workshop.hoverPreview.cursor.color": "gray",
+  "latex-workshop.view.pdf.invert": 0.0,
+  "latex-workshop.latex.tools": [
+    {
+      "name": "latexmk",
+      "command": "latexmk",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-shell-escape",
+        "-file-line-error",
+        "-pdf",
+        "%DOC%"
+      ]
+    },
+    {
+      "name": "pdflatex",
+      "command": "pdflatex",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-shell-escape",
+        "-file-line-error",
+        "%DOC%"
+      ]
+    },
+    {
+      "name": "bibtex",
+      "command": "bibtex",
+      "args": ["%DOCFILE%"]
+    },
+    {
+      "name": "sage",
+      "command": "sage",
+      "args": ["%DOC%.sagetex.sage"]
+    }
+  ],
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "latexmk 🔃",
+      "tools": ["latexmk"]
+    },
+    {
+      "name": "pdflatex ➞ bibtex ➞ pdflatex × 2",
+      "tools": ["pdflatex", "bibtex", "pdflatex", "pdflatex"]
+    },
+    {
+      "name": "pdflatex ➞ ⬡ sage ➞ pdflatex",
+      "tools": ["pdflatex", "sage", "pdflatex"]
+    }
+  ],
+  "highlight.regexes": {
+    "((?:<!— *)?(?:#|//|/\\*+|<!—|%) *TODO:?)(?!\\w)((?: +[^\n@]+?)(?= *(?:[^:]//|/\\*+|<!—|@))|(?: +[^@\n]+)?)": [
+      {
+        "overviewRulerColor": "#ffcc00",
+        "backgroundColor": "#ffcc00",
+        "color": "#1f1f1f",
+        "fontWeight": "bold"
+      },
+      {
+        "backgroundColor": "#d9ad00",
+        "color": "#1f1f1f"
+      }
+    ],
+    "((?:<!— *)?(?:#|//|/\\*+|<!—|%) *FIXME:?)(?!\\w)((?: +[^\n@]+?)(?= *(?:[^:]//|/\\*+|<!—|@))|(?: +[^@\n]+)?)": [
+      {
+        "overviewRulerColor": "#f33",
+        "backgroundColor": "#f33",
+        "color": "#1f1f1f",
+        "fontWeight": "bold"
+      },
+      {
+        "backgroundColor": "#b23535",
+        "color": "#1f1f1f"
+      }
+    ],
+    "((?:<!— *)?(?:#|//|/\\*+|<!—|%) *NOTE:?)(?!\\w)((?: +[^\n@]+?)(?= *(?:[^:]//|/\\*+|<!—|@))|(?: +[^@\n]+)?)": [
+      {
+        "overviewRulerColor": "#888",
+        "backgroundColor": "#888",
+        "color": "#1f1f1f",
+        "fontWeight": "bold"
+      },
+      {
+        "backgroundColor": "#444",
+        "color": "#ddd"
+      }
+    ],
+    "((?:<!— *)?(?:#|//|/\\*+|<!—|%) *MISSING:?)(?!\\w)((?: +[^\n@]+?)(?= *(?:[^:]//|/\\*+|<!—|@))|(?: +[^@\n]+)?)": [
+      {
+        "overviewRulerColor": "#88C",
+        "backgroundColor": "#88C",
+        "color": "#1f1f1f",
+        "fontWeight": "bold"
+      },
+      {
+        "backgroundColor": "#447",
+        "color": "#ddd"
+      }
+    ],
+    "((?:<!— *)?(?:#|//|/\\*+|<!—|%) *ADD\\s?:)(?!\\w)((?: +[^\n@]+?)(?= *(?:[^:]//|/\\*+|<!—|@))|(?: +[^@\n]+)?)": [
+      {
+        "overviewRulerColor": "#8C8",
+        "backgroundColor": "#8C8",
+        "color": "#1f1f1f",
+        "fontWeight": "bold"
+      },
+      {
+        "backgroundColor": "#474",
+        "color": "#ddd"
+      }
+    ],
+    "(// )(@\\w+)": [
+      {},
+      {
+        "color": "#4de0ff"
+      }
+    ],
+    // \todo[opt[[[[]]]]]{val}
+    "(\\\\todo\\[?[^\\]\\{\\}]*\\]?)(\\{.*\\})": [
+      {
+        "overviewRulerColor": "#2D3A3E",
+        "backgroundColor": "#2D3A3E",
+        "color": "#F6FCFA",
+        "fontWeight": "bold"
+      },
+      {
+        "backgroundColor": "#2D7A7E",
+        "color": "#ddd"
+      }
+    ]
+  },
+  // "prettier.printWidth": 140,
+  "cSpell.ignoreRegExpList": [
+    "\\\\cite{[A-Za-z0-9, -]+}",
+    "\\\\begin{\\w+}",
+    "\\\\end{\\w+}",
+    "\\\\usepackage{\\w+}",
+    "\\\\bibliographystyle{\\w+}",
+    "\\\\hyphenation{[A-Za-z0-9, -]+}",
+    "\\\\\\w+{?"
+  ],
+  "latex-workshop.hover.preview.cursor.symbol": "\\!|\\!",
+  "latex-workshop.hover.preview.cursor.color": "gray",
+  "latex-workshop.progress.runIconType": "Solid Circled"
+}
