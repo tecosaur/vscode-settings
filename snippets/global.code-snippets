@@ -1,0 +1,53 @@
+{
+    // Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
+    // description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope
+    // is left empty or omitted, the snippet gets applied to all languages. The prefix is what is
+    // used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+    // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders.
+    // Placeholders with the same ids are connected.
+    // Example:
+    // "Print to console": {
+    // 	"scope": "javascript,typescript",
+    // 	"prefix": "log",
+    // 	"body": [
+    // 		"console.log('$1');",
+    // 		"$2"
+    // 	],
+    // 	"description": "Log output to console"
+    // }
+    "iso date": {
+        "prefix": "date",
+        "body": "$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
+        "description": "Inset current iso date"
+    },
+    "iso datetime": {
+        "prefix": "datetime",
+        "body": "$CURRENT_YEAR-$CURRENT_MONTH-${CURRENT_DATE}T$CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND+08",
+        "description": "Insert current iso datetime"
+    },
+    "lorem ipsum": {
+        "prefix": "lipsum",
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec ante quis tellus aliquet fringilla id nec ligula. Pellentesque vulputate ligula in erat tincidunt, eu venenatis augue pellentesque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed a augue ut neque dignissim euismod ac nec augue. Pellentesque gravida congue elementum. Duis pulvinar pellentesque sodales. Sed pharetra, nibh nec gravida sagittis, sapien enim cursus diam, a iaculis tellus erat sit amet purus. Nunc tortor felis, ornare eu ultricies sit amet, ultrices vitae dui. Integer ac lacinia leo. ",
+        "description": "1st Paragraph of Lorem Ipsum"
+    },
+    "lorem ipsum 2": {
+        "prefix": "lipsum2",
+        "body": "Cras eu sapien ut ipsum commodo placerat ac at diam. Aliquam suscipit urna nec condimentum iaculis. Duis hendrerit eros ac gravida tincidunt. Praesent orci odio, pulvinar sed metus ac, scelerisque tincidunt elit. Donec pharetra sit amet diam eu pellentesque. Praesent quis volutpat arcu. Aliquam auctor finibus vestibulum. Suspendisse accumsan porttitor neque, at tincidunt ex pharetra nec. Phasellus ac dolor eget nunc mattis ultricies. In et tellus vel magna accumsan varius eu nec leo. Curabitur odio dolor, porttitor in lectus sed, consequat consectetur elit. Morbi vel quam a elit mattis consequat ac vitae enim. Nullam condimentum turpis vel purus pretium, at viverra nibh gravida. Aenean quis enim ac mi euismod vehicula. ",
+        "description": "2nd Paragraph of Lorem Ipsum"
+    },
+    "lorem ipsum 3": {
+        "prefix": "lipsum3",
+        "body": "Nam nec nisl tristique, pellentesque magna non, pretium nunc. Nunc non leo sapien. In hac habitasse platea dictumst. Cras laoreet augue lacus, nec cursus ante lobortis nec. Aliquam at neque ut quam consectetur hendrerit. Sed eu nibh at ipsum aliquam volutpat non ut mi. Integer sed tortor ut justo lobortis scelerisque. Nunc in gravida tortor, euismod tincidunt orci. Mauris euismod leo eget leo auctor, sed faucibus tellus gravida.",
+        "description": "3rd Paragraph of Lorem Ipsum"
+    },
+    "lorem ipsum 4": {
+        "prefix": "lipsum4",
+        "body": "Nunc eros quam, scelerisque vel metus vitae, gravida dapibus tellus. Nunc tincidunt libero et faucibus cursus. Sed sed felis congue, pharetra quam non, gravida urna. Cras ultrices mattis justo sit amet porta. Praesent efficitur sed quam quis varius. Etiam non laoreet lorem, nec efficitur nunc. Nulla nunc nisi, aliquet ac tellus aliquet, auctor sagittis lectus. Quisque interdum mattis facilisis.",
+        "description": "4th Paragraph of Lorem Ipsum"
+    },
+    "lorem ipsum 5": {
+        "prefix": "lipsum5",
+        "body": "Praesent dapibus vulputate leo eu facilisis. Donec et libero felis. Etiam sollicitudin, odio non sodales lacinia, felis lacus porttitor diam, non hendrerit nisi quam sed lacus. Aliquam erat volutpat. Morbi nisi dui, scelerisque sit amet finibus sed, sollicitudin in erat. Maecenas ac viverra ante, eu malesuada neque. Mauris commodo nisl nec magna pulvinar ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+        "description": "5th Paragraph of Lorem Ipsum"
+    }
+}
