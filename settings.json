@@ -163,6 +163,8 @@
     "todo.embedded.providers.ag.regex": "(?:#|//|/\\*+|<!—|—|%) *(TODO|FIXME|FIX|BUG|UGLY|HACK|NOTE|IDEA|REVIEW|DEBUG|OPTIMIZE|MISSING|ADD)",
     "latex-workshop.chktex.enabled": true,
     "latex-workshop.chktex.run": "onType",
+    "latex-workshop.chktex.args.active": ["-wall", "-n22", "-n30", "-e16", "-q", "-n1", "-n24"],
+    "latex-workshop.chktex.args.root": ["-wall", "-n22", "-n30", "-e16", "-q", "-n1", "-n24"],
     "latex-workshop.hover.preview.cursor.symbol": "\\!|\\!",
     "latex-workshop.hover.preview.cursor.color": "gray",
     "latex-workshop.hover.preview.cursor.enabled": true,
