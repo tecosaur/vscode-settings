@@ -346,6 +346,9 @@
     //     }
     // ],
 
+    "write-good.languages": ["markdown", "plaintext", "latex"],
+    "write-good.write-good-config": { "passive": false },
+
     "JSONResume.theme": "compact",
     "python.formatting.provider": "black",
     "git.enableSmartCommit": true,
