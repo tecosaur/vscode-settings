@@ -183,6 +183,21 @@
             "args": ["-synctex=1", "-interaction=nonstopmode", "-shell-escape", "-file-line-error", "%DOC%"]
         },
         {
+            "name": "precompile preamble",
+            "command": "pdftex",
+            "args": ["-ini", "-jobname=\"preamble\"", "\"&pdflatex\"", "mylatexformat.ltx", "\"%DOC%.tex\""]
+        },
+        {
+            "name": "reference precompiled preamble",
+            "command": "sed",
+            "args": ["-i", "1s/^/%\\&preamble\\n/", "%DOC%.tex"]
+        },
+        {
+            "name": "remove any reference precompiled preamble",
+            "command": "sed",
+            "args": ["-i", ":begin;$!N;s/%\\&preamble\\n//;tbegin;P;D", "%DOC%.tex"]
+        },
+        {
             "name": "bibtex",
             "command": "bibtex",
             "args": ["%DOCFILE%"]
@@ -197,6 +212,14 @@
         {
             "name": "latexmk 🔃",
             "tools": ["latexmk"]
+        },
+        {
+            "name": "pdflatex",
+            "tools": ["pdflatex"]
+        },
+        {
+            "name": "$(link) precompile preamble",
+            "tools": ["precompile preamble", "remove any reference precompiled preamble", "reference precompiled preamble"]
         },
         {
             "name": "pdflatex ➞ bibtex ➞ pdflatex × 2",
