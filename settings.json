@@ -303,6 +303,25 @@
         "\\\\hyphenation{[A-Za-z0-9, -]+}",
         "\\\\\\w+{?"
     ],
+    "cSpell.dictionaryDefinitions": [
+        {
+            "name": "SCOWL [Size=60], AU + UK(-ise)",
+            "path": "/home/tec/.config/Code - OSS/User/Custom cSpell Dictionaries/SCOWL-workdlist-au-uk-60.txt"
+        },
+        {
+            "name": "Scientific UK",
+            "path": "/home/tec/.config/Code - OSS/User/Custom cSpell Dictionaries/Scientific_UK.txt"
+        }
+    ],
+
+    "cSpell.dictionaries": ["SCOWL [Size=60], AU + UK(-ise)", "Scientific UK"],
+
+    // "cSpell.languageSettings": [
+    //     {
+    //         "languageId": "latex",
+    //         "dictionaries": ["SCOWL [Size=60], AU + UK(-ise)", "Scientific UK"]
+    //     }
+    // ],
 
     "JSONResume.theme": "compact",
     "python.formatting.provider": "black",
