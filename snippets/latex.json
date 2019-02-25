@@ -21,6 +21,10 @@
         "body": "\\rightarrow",
         "description": "→"
     },
+    "fontweight": {
+        "prefix": "fontweight",
+        "body": "\\fontseries{${1|t,el,l,tx,m,sb,b|}}\\selectfont$0"
+    },
     "doctemp - bmc": {
         "prefix": "doctemp",
         "body": [
