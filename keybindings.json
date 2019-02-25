@@ -1,18 +1,411 @@
 // Place your key bindings in this file to override the defaultsauto[]
 [
     {
-        "key": "ctrl+l ctrl+j",
-        "command": "latex-workshop.synctex",
-        "when": "editorTextFocus && !latex-workshop:altkeymap"
-    },
-    {
         "key": "shift+alt+f",
         "command": "editor.action.formatDocument",
         "when": "editorTextFocus && !editorReadonly"
     },
     {
-        "key": "ctrl+shift+i",
-        "command": "-editor.action.formatDocument",
-        "when": "editorTextFocus && !editorReadonly"
+        "key": "ctrl+s",
+        "command": "workbench.action.tasks.build",
+        "when": "editorTextFocus && editorLangId == 'cpp'"
+    },
+    //
+    {
+        "key": "cmd+]",
+        "command": "workbench.action.nextEditor"
+    },
+    {
+        "key": "cmd+[",
+        "command": "workbench.action.previousEditor"
+    },
+    {
+        "key": "cmd+]",
+        "command": "workbench.action.nextSideBarView",
+        "when": "sideBarFocus"
+    },
+    {
+        "key": "cmd+[",
+        "command": "workbench.action.previousSideBarView",
+        "when": "sideBarFocus"
+    },
+    {
+        "key": "cmd+]",
+        "command": "workbench.action.nextPanelView",
+        "when": "panelFocus"
+    },
+    {
+        "key": "cmd+[",
+        "command": "workbench.action.previousPanelView",
+        "when": "panelFocus"
+    },
+    // Latex Keybindings
+    {
+        "key": "ctrl+l ctrl+j",
+        "command": "latex-workshop.synctex",
+        "when": "editorTextFocus && !latex-workshop:altkeymap"
+    },
+    {
+        "key": "ctrl+m ctrl+w",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "command": "editor.action.insertSnippet",
+        "args": {
+            "snippet": "\\(${1:${TM_SELECTED_TEXT:text}}\\)"
+        }
+    },
+    {
+        "key": "ctrl+m ctrl+n",
+        "when": "editorTextFocus && !editorReadonly && editorLangId == 'latex'",
+        "command": "editor.action.insertSnippet",
+        "args": {
+            "snippet": "\\text{${1:${TM_SELECTED_TEXT:text}}}"
+        }
+    },
+    // Math operation(s)
+    {
+        "key": "ctrl+m ctrl+f",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "command": "editor.action.insertSnippet",
+        "args": {
+            "name": "mathfrak"
+        }
+    },
+    //   Quotes
+    {
+        "key": "oem_3 oem_7",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "command": "type",
+        "args": {
+            "text": "`"
+        }
+    },
+    {
+        "key": "oem_3 space",
+        "command": "type",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "text": "`" // this makes sure there's a way to type `
+        }
+    },
+    {
+        "key": "oem_3 oem_3",
+        "command": "type",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "text": "``" // this makes sure there's a way to type `
+        }
+    },
+    {
+        "key": "oem_3 shift+oem_7",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "command": "type",
+        "args": {
+            "text": "``"
+        }
+    },
+    // Maths Synbols
+    {
+        "key": "oem_3 ctrl+f",
+        "command": "type",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "text": "\\rightarrow"
+        }
+    },
+    {
+        "key": "oem_3 ctrl+b",
+        "command": "type",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "text": "\\leftarrow"
+        }
+    },
+    {
+        "key": "oem_3 ctrl+p",
+        "command": "type",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "text": "\\uparrow"
+        }
+    },
+    {
+        "key": "oem_3 ctrl+n",
+        "command": "type",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "text": "\\downarrow"
+        }
+    },
+    {
+        "key": "oem_3 shift+oem_comma", // `<
+        "command": "type",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "text": "\\leq"
+        }
+    },
+    {
+        "key": "oem_3 shift+oem_period", // `>
+        "command": "type",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "text": "\\geq"
+        }
+    },
+    {
+        "key": "oem_3 shift+oem_3", // `~
+        "command": "type",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "text": "\\tilde"
+        }
+    },
+    {
+        "key": "oem_3 shift+6", // `^
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "snippet": "^{$1}"
+        }
+    },
+    {
+        "key": "oem_3 shift+oem_minus", // `^
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "snippet": "_{$1}"
+        }
+    },
+    {
+        "key": "oem_3 shift+n",
+        "command": "type",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "text": "\\nalba"
+        }
+    },
+    {
+        "key": "oem_3 shift+i",
+        "command": "type",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "text": "\\infty"
+        }
+    },
+    {
+        "key": "oem_3 shift+a",
+        "command": "type",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "text": "\\forall"
+        }
+    },
+    {
+        "key": "oem_3 shift+e",
+        "command": "type",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "text": "\\exists"
+        }
+    },
+    {
+        "key": "oem_3 oem_2", // `/
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "snippet": "\\frac{$1}{$2}"
+        }
+    },
+    {
+        "key": "oem_3 i",
+        "command": "type",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "text": "\\in"
+        }
+    },
+    {
+        "key": "oem_3 shift+8", // `*
+        "command": "type",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "text": "\\times"
+        }
+    },
+    {
+        "key": "oem_3 oem_period",
+        "command": "type",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "text": "\\cdot"
+        }
+    },
+    {
+        "key": "oem_3 shift+oem_1", // `:
+        "command": "type",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "text": "\\colon"
+        }
+    },
+    {
+        "key": "oem_3 shift+oem_4", // `{
+        "command": "type",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "text": "\\subset"
+        }
+    },
+    {
+        "key": "oem_3 shift+oem_6", // `}
+        "command": "type",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "text": "\\supset"
+        }
+    },
+    {
+        "key": "oem_3 oem_4", // `[
+        "command": "type",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "text": "\\subseteq"
+        }
+    },
+    {
+        "key": "oem_3 oem_6", // `]
+        "command": "type",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "text": "\\supseteq"
+        }
+    },
+    {
+        "key": "oem_3 0",
+        "command": "type",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "text": "\\emptyset"
+        }
+    },
+    {
+        "key": "oem_3 oem_5", // `\
+        "command": "type",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "text": "\\setminus"
+        }
+    },
+    {
+        "key": "oem_3 shift+oem_plus", // `+
+        "command": "type",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "text": "\\cup"
+        }
+    },
+    {
+        "key": "oem_3 oem_minus", // `-
+        "command": "type",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "text": "\\cap"
+        }
+    },
+    {
+        "key": "oem_3 shift+9", // `(
+        "command": "type",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "text": "\\langle"
+        }
+    },
+    {
+        "key": "oem_3 shift+0", // `)
+        "command": "type",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "text": "\\rangle"
+        }
+    },
+    {
+        "key": "oem_3 ctrl+e",
+        "command": "type",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "text": "\\exp"
+        }
+    },
+    {
+        "key": "oem_3 ctrl+s",
+        "command": "type",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "text": "\\sin"
+        }
+    },
+    {
+        "key": "oem_3 ctrl+c",
+        "command": "type",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "text": "\\cos"
+        }
+    },
+    {
+        "key": "oem_3 ctrl+t",
+        "command": "type",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "text": "\\tan"
+        }
+    },
+    {
+        "key": "oem_3 ctrl+shift+6",
+        "command": "type",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "text": "\\sup"
+        }
+    },
+    {
+        "key": "oem_3 ctrl+shift+oem_minus",
+        "command": "type",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "text": "\\inf"
+        }
+    },
+    {
+        "key": "oem_3 ctrl+d",
+        "command": "type",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "text": "\\det"
+        }
+    },
+    {
+        "key": "oem_3 ctrl+l",
+        "command": "type",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "text": "\\lim"
+        }
+    },
+    {
+        "key": "oem_3 shift+oem_5", // `|
+        "command": "type",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "text": "\\vee"
+        }
+    },
+    {
+        "key": "oem_3 shift+7", // `&
+        "command": "type",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "text": "\\wedge"
+        }
     }
 ]
