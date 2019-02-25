@@ -169,7 +169,7 @@
         }
     },
     {
-        "key": "oem_3 shift+oem_minus", // `^
+        "key": "oem_3 shift+oem_minus", // `-
         "command": "editor.action.insertSnippet",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
@@ -406,6 +406,199 @@
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
             "text": "\\wedge"
+        }
+    },
+    // greek letters
+    {
+        "key": "oem_3 a",
+        "command": "type",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "text": "\\alpha"
+        }
+    },
+    {
+        "key": "oem_3 b",
+        "command": "type",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "text": "\\beta"
+        }
+    },
+    {
+        "key": "oem_3 g",
+        "command": "type",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "text": "\\gamma"
+        }
+    },
+    {
+        "key": "oem_3 d",
+        "command": "type",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "text": "\\delta"
+        }
+    },
+    {
+        "key": "oem_3 e",
+        "command": "type",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "text": "\\epsilon"
+        }
+    },
+    {
+        "key": "oem_3 z",
+        "command": "type",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "text": "\\zeta"
+        }
+    },
+    {
+        "key": "oem_3 h",
+        "command": "type",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "text": "\\eta"
+        }
+    },
+    {
+        "key": "oem_3 q",
+        "command": "type",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "text": "\\theta"
+        }
+    },
+    {
+        "key": "oem_3 i",
+        "command": "type",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "text": "\\iota"
+        }
+    },
+    {
+        "key": "oem_3 k",
+        "command": "type",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "text": "\\kappa"
+        }
+    },
+    {
+        "key": "oem_3 l",
+        "command": "type",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "text": "\\lambda"
+        }
+    },
+    {
+        "key": "oem_3 m",
+        "command": "type",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "text": "\\mu"
+        }
+    },
+    {
+        "key": "oem_3 n",
+        "command": "type",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "text": "\\nu"
+        }
+    },
+    {
+        "key": "oem_3 z",
+        "command": "type",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "text": "\\zi"
+        }
+    },
+    {
+        "key": "oem_3 o",
+        "command": "type",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "text": "\\omnicron"
+        }
+    },
+    {
+        "key": "oem_3 p",
+        "command": "type",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "text": "\\pi"
+        }
+    },
+    {
+        "key": "oem_3 r",
+        "command": "type",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "text": "\\rho"
+        }
+    },
+    {
+        "key": "oem_3 s",
+        "command": "type",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "text": "\\sigma"
+        }
+    },
+    {
+        "key": "oem_3 t",
+        "command": "type",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "text": "\\tau"
+        }
+    },
+    {
+        "key": "oem_3 u",
+        "command": "type",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "text": "\\upsilon"
+        }
+    },
+    {
+        "key": "oem_3 f",
+        "command": "type",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "text": "\\phi"
+        }
+    },
+    {
+        "key": "oem_3 c",
+        "command": "type",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "text": "\\chi"
+        }
+    },
+    {
+        "key": "oem_3 y",
+        "command": "type",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "text": "\\psi"
+        }
+    },
+    {
+        "key": "oem_3 o",
+        "command": "type",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "text": "\\omega"
         }
     }
 ]
