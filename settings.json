@@ -135,7 +135,7 @@
     "python.autoComplete.addBrackets": true,
     "python.terminal.executeInFileDir": true,
     "python.jediEnabled": false,
-    // "java.home": "C:\\Program Files\\Java\\jdk-10.0.1",
+    "tslint.jsEnable": true,
     // "maven.terminal.useJavaHome": true,
     "files.trimTrailingWhitespace": true,
     "gitlens.advanced.messages": {
@@ -306,5 +306,33 @@
 
     "JSONResume.theme": "compact",
     "python.formatting.provider": "black",
-    "git.enableSmartCommit": true
+    "git.enableSmartCommit": true,
+    "cSpell.userWords": ["chktex"],
+    "errorLens.infoColor": "rgba(46,134,185,0.3)",
+
+    "code-runner.executorMapByFileExtension": {
+        ".vb": "cd $dir && vbc /nologo $fileName && $dir$fileNameWithoutExt",
+        ".vbs": "cscript //Nologo",
+        ".scala": "scala",
+        ".jl": "julia",
+        ".cr": "crystal",
+        ".ml": "ocaml",
+        ".exs": "elixir",
+        ".hx": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+        ".rkt": "racket",
+        ".ahk": "autohotkey",
+        ".dot": "cd $dir && dot -Tpdf -o $fileNameWithoutExt.pdf $fileName -Gfontname=\"IBM Plex Serif\" -Nfontname=\"IBM Plex Serif\" -Efontname=\"IBM Plex Serif\"",
+        ".au3": "autoit3",
+        ".kt": "cd $dir && kotlinc $fileName -include-runtime -d $fileNameWithoutExt.jar && java -jar $fileNameWithoutExt.jar",
+        ".kts": "kotlinc -script",
+        ".dart": "dart",
+        ".pas": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+        ".pp": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+        ".d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+        ".hs": "runhaskell",
+        ".nim": "nim compile --verbosity:0 --hints:off --run",
+        ".csproj": "dotnet run --project",
+        ".fsproj": "dotnet run --project",
+        ".lisp": "sbcl --script"
+    }
 }
