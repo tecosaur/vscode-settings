@@ -68,6 +68,21 @@
         // "editor.fontSize": 18,
         // "editor.letterSpacing": 0.15
     },
+    "[javascript]": {
+        "editor.suggestSelection": "first",
+        "editor.rulers": [140]
+    },
+    "[typescript]": {
+        "editor.suggestSelection": "first",
+        "editor.rulers": [140]
+    },
+    "[css]": {
+        "editor.rulers": [140]
+    },
+    "[python]": {
+        "editor.suggestSelection": "first",
+        "editor.rulers": [88]
+    },
     // JSON level colour coding
     "editor.tokenColorCustomizations": {
         "textMateRules": [
