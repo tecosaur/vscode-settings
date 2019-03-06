@@ -13,16 +13,21 @@
     // ————————————————————————————
     "breadcrumbs.enabled": true,
     "window.enableMenuBarMnemonics": false,
-    "editor.snippetSuggestions": "top",
-    "editor.cursorSmoothCaretAnimation": true,
+    // cursor
     "editor.cursorBlinking": "phase",
-    "editor.suggestSelection": "recentlyUsedByPrefix",
+    "editor.cursorSmoothCaretAnimation": true,
+    // suggestions / snippets
+    "editor.snippetSuggestions": "top",
     "editor.wordBasedSuggestions": true,
     "editor.tabCompletion": "onlySnippets",
+    "editor.suggestSelection": "recentlyUsedByPrefix",
+    "editor.quickSuggestionsDelay": 0,
+    // other
     "editor.formatOnSave": true,
     "editor.emptySelectionClipboard": false,
-    "editor.quickSuggestionsDelay": 0,
     "editor.wordSeparators": "`-~!@#$%^&*()=+[\\{]\\}\\|;:'\",.<>/?",
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
     "files.exclude": {
         "**/._*": true,
         // Latex files
