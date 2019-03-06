@@ -196,7 +196,16 @@
         {
             "name": "precompile preamble",
             "command": "pdftex",
-            "args": ["-ini", "-jobname=\"preamble\"", "\"&pdflatex\"", "mylatexformat.ltx", "\"%DOC%.tex\""]
+            "args": [
+                "-ini",
+                "-interaction=nonstopmode",
+                "-shell-escape",
+                "-file-line-error",
+                "-jobname=\"preamble\"",
+                "\"&pdflatex\"",
+                "mylatexformat.ltx",
+                "\"%DOC%.tex\""
+            ]
         },
         {
             "name": "reference precompiled preamble",
