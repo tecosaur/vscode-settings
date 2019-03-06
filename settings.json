@@ -25,12 +25,23 @@
     "editor.wordSeparators": "`-~!@#$%^&*()=+[\\{]\\}\\|;:'\",.<>/?",
     "files.exclude": {
         "**/._*": true,
-        // For LaTeX generated files
+        // Latex files
         "**/*.synctex.gz": true,
         "**/*.fls": true,
         "**/*.fdb_latexmk": true,
         "**/*.aux": true,
-        "**/*.ptc": true
+        "**/*.ptc": true,
+        // Latex Glossary Files
+        "**/*.glg": true,
+        "**/*.glo": true,
+        "**/*.gls": true,
+        "**/*.glsdefs": true,
+        "**/*.ist": true,
+        // Other filles
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
     },
     "files.associations": {
         "*.latex": "latex"
@@ -229,6 +240,28 @@
             "name": "pdflatex ➞ ⬡ sage ➞ pdflatex",
             "tools": ["pdflatex", "sage", "pdflatex"]
         }
+    ],
+    "latex-workshop.latex.clean.fileTypes": [
+        "*.aux",
+        "*.bbl",
+        "*.blg",
+        "*.idx",
+        "*.ind",
+        "*.lof",
+        "*.lot",
+        "*.out",
+        "*.toc",
+        "*.acn",
+        "*.acr",
+        "*.alg",
+        "*.glg",
+        "*.glo",
+        "*.gls",
+        "*.ist",
+        "*.fls",
+        "*.log",
+        "*.fdb_latexmk",
+        "*.glsdefs"
     ],
     "highlight.regexes": {
         "((?:<!— *)?(?:#|//|/\\*+|<!—|%) *TODO:?)(?!\\w)((?: +[^\n@]+?)(?= *(?:[^:]//|/\\*+|<!—|@))|(?: +[^@\n]+)?)": [
