@@ -20,9 +20,11 @@
     "formulahendry.code-runner",
     "liximomo.sftp",
     "fabiospampinato.vscode-diff",
+    "albert.TabOut",
     // utility - informative
     "streetsidesoftware.code-spell-checker",
     "PatrykPeszko.vscode-proselint",
+    "travisthetechie.write-good-linter",
     "donjayamanne.githistory",
     "mhutchie.git-graph",
     "eamodio.gitlens",
@@ -40,8 +42,9 @@
     "henoc.svgeditor",
     "GrapeCity.gc-excelviewer",
     "yzhang.markdown-all-in-one",
-    "tootone.org-mode",
+    "vscode-org-mode.org-mode",
     "WallabyJs.quokka-vscode",
+    "pranaygp.vscode-css-peek",
     // themes
     "monokai.theme-monokai-pro-vscode",
     "zhuangtongfa.Material-theme",
