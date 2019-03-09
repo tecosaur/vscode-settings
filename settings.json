@@ -202,6 +202,7 @@
     "latex-workshop.view.pdf.invert": 0.0,
     "latex-workshop.progress.runIconType": "Solid Circled",
     "latex-workshop.latex.texDirs": ["~/texmf/tex/latex/bmc"],
+    "latex-workshop.latex.autoBuild.run": "onSave",
     "latex-workshop.latex.tools": [
         {
             "name": "latexmk",
@@ -391,11 +392,11 @@
     "cSpell.dictionaryDefinitions": [
         {
             "name": "SCOWL [Size=60], AU + UK(-ise)",
-            "path": "/home/tec/.config/Code - OSS/User/Custom cSpell Dictionaries/SCOWL-workdlist-au-uk-60.txt"
+            "path": "~/.config/Code - OSS/User/Custom cSpell Dictionaries/SCOWL-workdlist-au-uk-60.txt"
         },
         {
             "name": "Scientific UK",
-            "path": "/home/tec/.config/Code - OSS/User/Custom cSpell Dictionaries/Scientific_UK.txt"
+            "path": "~/.config/Code - OSS/User/Custom cSpell Dictionaries/Scientific_UK.txt"
         }
     ],
 
