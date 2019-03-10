@@ -416,6 +416,7 @@
     "python.formatting.provider": "black",
     "git.enableSmartCommit": true,
     "cSpell.userWords": ["chktex"],
+    "errorLens.statusBarControl": "never",
     "errorLens.warningColor": "rgba(253,215,108,0.1)",
     "errorLens.warningTextColor": "rgba(240,240,240,0.5)",
     "errorLens.infoColor": "rgba(120,220,232,0.1)",
