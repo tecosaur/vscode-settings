@@ -260,7 +260,7 @@
         },
         {
             "name": "$(link) precompile preamble",
-            "tools": ["precompile preamble", "remove any reference precompiled preamble", "reference precompiled preamble"]
+            "tools": ["precompile preamble", "remove any reference precompiled preamble", "reference precompiled preamble", "latexmk"]
         },
         {
             "name": "pdflatex ➞ bibtex ➞ pdflatex × 2",
