@@ -59,7 +59,8 @@
         "editor.wordWrap": "on",
         "editor.fontFamily": "IBM Plex Sans", // or: Verdana, Comic Sans MS
         "editor.fontSize": 18,
-        "editor.letterSpacing": 0.15
+        "editor.letterSpacing": 0.15,
+        "editor.suggest.snippetsPreventQuickSuggestions": false
     },
     "bracket-pair-colorizer-2.excludedLanguages": ["latex"],
     "[markdown]": {
@@ -167,8 +168,6 @@
     "python.terminal.executeInFileDir": true,
     "python.jediEnabled": false,
     "tslint.jsEnable": true,
-    "jsannotations.enabled": true,
-    "cSpell.showStatus": false,
     // "maven.terminal.useJavaHome": true,
     "files.trimTrailingWhitespace": true,
     "gitlens.advanced.messages": {
