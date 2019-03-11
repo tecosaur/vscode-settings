@@ -167,6 +167,8 @@
     "python.terminal.executeInFileDir": true,
     "python.jediEnabled": false,
     "tslint.jsEnable": true,
+    "jsannotations.enabled": true,
+    "cSpell.showStatus": false,
     // "maven.terminal.useJavaHome": true,
     "files.trimTrailingWhitespace": true,
     "gitlens.advanced.messages": {
