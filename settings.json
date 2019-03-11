@@ -175,6 +175,7 @@
     "gitlens.advanced.messages": {
         "suppressShowKeyBindingsNotice": true
     },
+    "git-graph.graphColours": ["#FC9867", "#78DCE8", "#FF6188", "#FFD866", "#A9DC76", "#AB9DF2"],
     "org.todoKeywords": ["TODO", "DONE", "PRGS", "WAIT", "SCHD"],
     "todo.colors.types": {
         "TODO": "#ffcc00",
