@@ -36,6 +36,7 @@
         "**/*.fdb_latexmk": true,
         "**/*.aux": true,
         "**/*.ptc": true,
+        "**/_minted-*": true,
         // Latex Glossary Files
         "**/*.glg": true,
         "**/*.glo": true,
