@@ -35,6 +35,7 @@
     "ms-python.python",
     "almenon.arepl",
     "ms-vscode.cpptools",
+    "jeff-hykin.better-cpp-syntax",
     "henoc.svgeditor",
     "GrapeCity.gc-excelviewer",
     "yzhang.markdown-all-in-one",
