@@ -178,7 +178,7 @@
         "command": "editor.action.insertSnippet",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "snippet": "^{$1}"
+            "snippet": "^{${1:${TM_SELECTED_TEXT}"
         }
     },
     {
@@ -186,7 +186,7 @@
         "command": "editor.action.insertSnippet",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "snippet": "_{$1}"
+            "snippet": "_{${1:${TM_SELECTED_TEXT}"
         }
     },
     {
@@ -234,7 +234,7 @@
         "command": "editor.action.insertSnippet",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "snippet": "\\frac{$1}{$2}"
+            "snippet": "\\frac{${1:${TM_SELECTED_TEXT}}}{$2}"
         }
     },
     {
@@ -311,10 +311,10 @@
     },
     {
         "key": "oem_3 oem_5", // `\
-        "command": "type",
+        "command": "editor.action.insertSnippet",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\setminus"
+            "snippet": "\\setminus ${1:${TM_SELECTED_TEXT/(.{7,})/\\left( $1 \\right)/}}"
         }
     },
     {
@@ -351,74 +351,74 @@
     },
     {
         "key": "oem_3 shift+v",
-        "command": "type",
+        "command": "editor.action.insertSnippet",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\vec{$1}$0"
+            "snippet": "\\vec{${1:${TM_SELECTED_TEXT}}}$0"
         }
     },
     {
         "key": "oem_3 ctrl+e",
-        "command": "type",
+        "command": "editor.action.insertSnippet",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\exp"
+            "snippet": "\\exp ${1:${TM_SELECTED_TEXT/(.{7,})/\\left( $1 \\right)/}}$0"
         }
     },
     {
         "key": "oem_3 ctrl+s",
-        "command": "type",
+        "command": "editor.action.insertSnippet",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\sin"
+            "snippet": "\\sin ${1:${TM_SELECTED_TEXT/(.{7,})/\\left( $1 \\right)/}}$0"
         }
     },
     {
         "key": "oem_3 ctrl+c",
-        "command": "type",
+        "command": "editor.action.insertSnippet",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\cos"
+            "snippet": "\\cos ${1:${TM_SELECTED_TEXT/(.{7,})/\\left( $1 \\right)/}}$0"
         }
     },
     {
         "key": "oem_3 ctrl+t",
-        "command": "type",
+        "command": "editor.action.insertSnippet",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\tan"
+            "snippet": "\\tan ${1:${TM_SELECTED_TEXT/(.{7,})/\\left( $1 \\right)/}}$0"
         }
     },
     {
         "key": "oem_3 ctrl+shift+6",
-        "command": "type",
+        "command": "editor.action.insertSnippet",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\sup"
+            "snippet": "\\sup ${1:${TM_SELECTED_TEXT/(.{7,})/\\left( $1 \\right)/}}$0"
         }
     },
     {
         "key": "oem_3 ctrl+shift+oem_minus",
-        "command": "type",
+        "command": "editor.action.insertSnippet",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\inf"
+            "snippet": "\\inf ${1:${TM_SELECTED_TEXT/(.{7,})/\\left( $1 \\right)/}}$0"
         }
     },
     {
         "key": "oem_3 ctrl+d",
-        "command": "type",
+        "command": "editor.action.insertSnippet",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\det"
+            "snippet": "\\det ${1:${TM_SELECTED_TEXT/(.{7,})/\\left( $1 \\right)/}}$0"
         }
     },
     {
         "key": "oem_3 ctrl+l",
-        "command": "type",
+        "command": "editor.action.insertSnippet",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\lim"
+            "snippet": "\\lim_{$2 \\to $3} ${1:${TM_SELECTED_TEXT/(.{7,})/\\left( $1 \\right)/}}$0"
         }
     },
     {
