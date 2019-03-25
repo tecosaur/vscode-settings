@@ -46,6 +46,11 @@
         "when": "editorTextFocus && !latex-workshop:altkeymap"
     },
     {
+        "key": "ctrl+k shift+s",
+        "command": "latex-workshop.saveWithoutBuilding",
+        "when": "editorTextFocus && editorLangId == 'latex'"
+    },
+    {
         "key": "ctrl+m ctrl+w",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "command": "editor.action.insertSnippet",
