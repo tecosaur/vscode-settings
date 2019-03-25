@@ -350,6 +350,14 @@
         }
     },
     {
+        "key": "oem_3 shift+v",
+        "command": "type",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "text": "\\vec{$1}$0"
+        }
+    },
+    {
         "key": "oem_3 ctrl+e",
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
