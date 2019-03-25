@@ -189,7 +189,7 @@
         "REVIEW": "#00ccff",
         "OPTIMIZE": "#00ccff",
         "TSC": "#00ccff",
-        "NOTE": "#cc00cc",
+        "NOTE": "#888",
         "IDEA": "#cc00cc",
         "ADD": "#8C8",
         "MISSING": "#689cff"
