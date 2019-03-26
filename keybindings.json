@@ -186,7 +186,7 @@
         "command": "editor.action.insertSnippet",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "snippet": "^{${1:${TM_SELECTED_TEXT}"
+            "snippet": "^{${1:${TM_SELECTED_TEXT}}}"
         }
     },
     {
@@ -194,7 +194,7 @@
         "command": "editor.action.insertSnippet",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "snippet": "_{${1:${TM_SELECTED_TEXT}"
+            "snippet": "_{${1:${TM_SELECTED_TEXT}}}"
         }
     },
     {
