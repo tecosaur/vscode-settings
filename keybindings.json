@@ -199,10 +199,10 @@
     },
     {
         "key": "oem_3 shift+5", // `%
-        "command": "type",
+        "command": "editor.action.insertSnippet",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\bmod"
+            "snippet": "\\\\${1:${TM_SELECTED_TEXT/.+/p/}}mod${2:${TM_SELECTED_TEXT/(.+)/{$1}/}}$0"
         }
     },
     {
@@ -214,11 +214,43 @@
         }
     },
     {
-        "key": "oem_3 shift+i",
+        "key": "oem_3 8",
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
             "text": "\\infty"
+        }
+    },
+    {
+        "key": "oem_3 6",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "snippet": "\\partial "
+        }
+    },
+    {
+        "key": "oem_3 2",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "snippet": "\\sqrt{${1:${TM_SELECTED_TEXT}}$0"
+        }
+    },
+    {
+        "key": "oem_3 shift+i",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "snippet": "\\int_{$1}^{$2}${TM_SELECTED_TEXT}$0"
+        }
+    },
+    {
+        "key": "oem_3 shift+s",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "snippet": "\\sum_{$1}^{$2}${TM_SELECTED_TEXT}$0"
         }
     },
     {
