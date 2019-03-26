@@ -59,6 +59,14 @@
         }
     },
     {
+        "key": "ctrl+m ctrl+d",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "command": "editor.action.insertSnippet",
+        "args": {
+            "snippet": "\\[\n\t${1:${TM_SELECTED_TEXT}}\n\\]"
+        }
+    },
+    {
         "key": "ctrl+m ctrl+n",
         "when": "editorTextFocus && !editorReadonly && editorLangId == 'latex'",
         "command": "editor.action.insertSnippet",
