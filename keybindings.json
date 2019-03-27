@@ -479,7 +479,7 @@
     },
     // greek letters
     {
-        "key": "oem_3 a",
+        "key": "oem_3 alt+a",
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
@@ -487,7 +487,7 @@
         }
     },
     {
-        "key": "oem_3 b",
+        "key": "oem_3 alt+b",
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
@@ -495,7 +495,7 @@
         }
     },
     {
-        "key": "oem_3 g",
+        "key": "oem_3 alt+g",
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
@@ -503,7 +503,7 @@
         }
     },
     {
-        "key": "oem_3 d",
+        "key": "oem_3 alt+d",
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
@@ -511,7 +511,7 @@
         }
     },
     {
-        "key": "oem_3 e",
+        "key": "oem_3 alt+e",
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
@@ -519,7 +519,7 @@
         }
     },
     {
-        "key": "oem_3 z",
+        "key": "oem_3 alt+z",
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
@@ -527,7 +527,7 @@
         }
     },
     {
-        "key": "oem_3 h",
+        "key": "oem_3 alt+h",
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
@@ -535,7 +535,7 @@
         }
     },
     {
-        "key": "oem_3 q",
+        "key": "oem_3 alt+q",
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
@@ -543,7 +543,7 @@
         }
     },
     {
-        "key": "oem_3 i",
+        "key": "oem_3 alt+i",
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
@@ -551,7 +551,7 @@
         }
     },
     {
-        "key": "oem_3 k",
+        "key": "oem_3 alt+k",
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
@@ -559,7 +559,7 @@
         }
     },
     {
-        "key": "oem_3 l",
+        "key": "oem_3 alt+l",
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
@@ -567,7 +567,7 @@
         }
     },
     {
-        "key": "oem_3 m",
+        "key": "oem_3 alt+m",
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
@@ -575,7 +575,7 @@
         }
     },
     {
-        "key": "oem_3 n",
+        "key": "oem_3 alt+n",
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
@@ -583,7 +583,7 @@
         }
     },
     {
-        "key": "oem_3 z",
+        "key": "oem_3 alt+z",
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
@@ -591,7 +591,7 @@
         }
     },
     {
-        "key": "oem_3 o",
+        "key": "oem_3 alt+o",
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
@@ -599,7 +599,7 @@
         }
     },
     {
-        "key": "oem_3 p",
+        "key": "oem_3 alt+p",
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
@@ -607,7 +607,7 @@
         }
     },
     {
-        "key": "oem_3 r",
+        "key": "oem_3 alt+r",
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
@@ -615,7 +615,7 @@
         }
     },
     {
-        "key": "oem_3 s",
+        "key": "oem_3 alt+s",
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
@@ -623,7 +623,7 @@
         }
     },
     {
-        "key": "oem_3 t",
+        "key": "oem_3 alt+t",
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
@@ -631,7 +631,7 @@
         }
     },
     {
-        "key": "oem_3 u",
+        "key": "oem_3 alt+u",
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
@@ -639,7 +639,7 @@
         }
     },
     {
-        "key": "oem_3 f",
+        "key": "oem_3 alt+f",
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
@@ -647,7 +647,7 @@
         }
     },
     {
-        "key": "oem_3 c",
+        "key": "oem_3 alt+c",
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
@@ -655,7 +655,7 @@
         }
     },
     {
-        "key": "oem_3 y",
+        "key": "oem_3 alt+y",
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
@@ -663,7 +663,7 @@
         }
     },
     {
-        "key": "oem_3 o",
+        "key": "oem_3 alt+o",
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
