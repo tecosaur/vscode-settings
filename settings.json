@@ -53,6 +53,7 @@
         "*.latex": "latex"
     },
     "files.insertFinalNewline": true,
+    "keyboard.dispatch": "keyCode", // make capsLock to backspace key remap work in vs code
     // ————————————————————————————
     // File-type specific
     // ————————————————————————————
