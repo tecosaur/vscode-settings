@@ -42,6 +42,9 @@
         "**/*.gls": true,
         "**/*.glsdefs": true,
         "**/*.ist": true,
+        "**/*.acn": true,
+        "**/*.acr": true,
+        "**/*.alg": true,
         // Other filles
         "**/.classpath": true,
         "**/.project": true,
