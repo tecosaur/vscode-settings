@@ -2,12 +2,11 @@
     "editor.fontLigatures": true,
     "window.zoomLevel": 1,
     "editor.fontSize": 16,
-    "editor.fontFamily": "Fira Code",
+    "editor.fontFamily": "'Fira Code', 'Droid Sans Mono', consolas, monospace",
     "workbench.colorTheme": "Monokai Pro",
     "workbench.iconTheme": "Monokai Pro Icons",
     "window.titleBarStyle": "custom",
     "workbench.statusBar.feedback.visible": false,
-
     // ————————————————————————————
     // Editor Feel
     // ————————————————————————————
@@ -59,7 +58,7 @@
     // ————————————————————————————
     "[latex]": {
         "editor.wordWrap": "on",
-        "editor.fontFamily": "IBM Plex Sans", // or: Verdana, Comic Sans MS
+        "editor.fontFamily": "'IBM Plex Sans', Verdana", // or: Comic Sans MS
         "editor.fontSize": 18,
         "editor.letterSpacing": 0.15,
         "editor.suggest.snippetsPreventQuickSuggestions": false
