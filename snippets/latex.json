@@ -25,6 +25,15 @@
         "prefix": "fontweight",
         "body": "\\fontseries{${1|t,el,l,tx,m,sb,b|}}\\selectfont$0"
     },
+    "table": {
+        "prefix": "@tabular",
+        "body": ["\\begin{tabular}{$1}", "${1:${CLIPBOARD/[\\t]/ & /g}/a/b/g}\\end{tabular}$0"]
+        // {${1/void$|(.+)/${1:+\n\treturn nil;}/}
+    },
+    "new glossary entry": {
+        "prefix": "\\newglossaryentry",
+        "body": ["\\newglossaryentry{${1:reference name}}", "{", "\tname=${2:display name},", "\tdescription={${3:description}}", "}$0"]
+    },
     "doctemp - bmc": {
         "prefix": "doctemp",
         "body": [
