@@ -55,7 +55,7 @@
         "when": "editorTextFocus && editorLangId == 'latex'",
         "command": "editor.action.insertSnippet",
         "args": {
-            "snippet": "\\( ${1:${TM_SELECTED_TEXT}} \\)"
+            "snippet": "\\(${1:${TM_SELECTED_TEXT}}\\)"
         }
     },
     {
@@ -206,9 +206,26 @@
             "text": "``"
         }
     },
+    // Common maths expressions
+    {
+        "key": "oem_3 d", // nth derivative
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "snippet": "\\\\frac{\\\\dd^${1:${TM_SELECTED_TEXT}} y}{\\\\dd x^${1:${TM_SELECTED_TEXT}}}$0"
+        }
+    },
+    {
+        "key": "oem_3 i",
+        "command": "type",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "text": "\\implies "
+        }
+    },
     // Maths Synbols
     {
-        "key": "oem_3 ctrl+f",
+        "key": "oem_3 f",
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
@@ -216,7 +233,7 @@
         }
     },
     {
-        "key": "oem_3 ctrl+b",
+        "key": "oem_3 b",
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
@@ -244,7 +261,7 @@
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\leq"
+            "text": "\\leq "
         }
     },
     {
@@ -252,7 +269,7 @@
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\geq"
+            "text": "\\geq "
         }
     },
     {
@@ -260,7 +277,15 @@
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\equiv"
+            "text": "\\equiv "
+        }
+    },
+    {
+        "key": "alt+=",
+        "command": "type",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "text": "&= "
         }
     },
     {
@@ -324,7 +349,7 @@
         "command": "editor.action.insertSnippet",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "snippet": "\\sqrt{${1:${TM_SELECTED_TEXT}}$0"
+            "snippet": "\\sqrt{${1:${TM_SELECTED_TEXT}}}$0"
         }
     },
     {
@@ -340,7 +365,15 @@
         "command": "editor.action.insertSnippet",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "snippet": "\\sum_{$1}^{$2}${TM_SELECTED_TEXT}$0"
+            "snippet": "\\\\sum_{${1:n = 1}}^{${2:\\\\infty}}${TM_SELECTED_TEXT}$0"
+        }
+    },
+    {
+        "key": "oem_3 shift+l",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "snippet": "\\\\lim_{${1:n \\\\to \\\\infty}} ${TM_SELECTED_TEXT}$0"
         }
     },
     {
@@ -348,7 +381,7 @@
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\forall"
+            "text": "\\forall "
         }
     },
     {
@@ -372,7 +405,7 @@
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\in"
+            "text": "\\in "
         }
     },
     {
@@ -380,7 +413,7 @@
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\times"
+            "text": "\\times "
         }
     },
     {
@@ -396,7 +429,7 @@
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\colon"
+            "text": "\\colon "
         }
     },
     {
@@ -404,7 +437,7 @@
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\subset"
+            "text": "\\subset "
         }
     },
     {
@@ -412,7 +445,7 @@
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\supset"
+            "text": "\\supset "
         }
     },
     {
@@ -436,7 +469,7 @@
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\emptyset"
+            "text": "\\emptyset "
         }
     },
     {
@@ -452,7 +485,7 @@
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\cup"
+            "text": "\\cup "
         }
     },
     {
@@ -460,7 +493,7 @@
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\cap"
+            "text": "\\cap "
         }
     },
     {
@@ -468,7 +501,7 @@
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\langle"
+            "text": "\\langle "
         }
     },
     {
@@ -476,7 +509,7 @@
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\rangle"
+            "text": "\\rangle "
         }
     },
     {
@@ -556,7 +589,15 @@
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\vee"
+            "text": "\\vee "
+        }
+    },
+    {
+        "key": "oem_3 alt+oem_5", // `|
+        "command": "type",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "text": "\\mid "
         }
     },
     {
@@ -564,7 +605,7 @@
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\wedge"
+            "text": "\\wedge "
         }
     },
     // greek letters
@@ -573,7 +614,7 @@
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\alpha"
+            "text": "\\alpha "
         }
     },
     {
@@ -581,7 +622,7 @@
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\textAlpha"
+            "text": "\\textalpha "
         }
     },
     {
@@ -589,7 +630,7 @@
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\beta"
+            "text": "\\beta "
         }
     },
     {
@@ -597,7 +638,7 @@
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\textBeta"
+            "text": "\\textbeta "
         }
     },
     {
@@ -605,7 +646,7 @@
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\gamma"
+            "text": "\\gamma "
         }
     },
     {
@@ -613,7 +654,7 @@
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\textGamma"
+            "text": "\\textgamma "
         }
     },
     {
@@ -621,7 +662,7 @@
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\delta"
+            "text": "\\delta "
         }
     },
     {
@@ -629,7 +670,7 @@
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\textDelta"
+            "text": "\\textdelta "
         }
     },
     {
@@ -637,7 +678,7 @@
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\epsilon"
+            "text": "\\epsilon "
         }
     },
     {
@@ -645,7 +686,7 @@
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\textEpsilon"
+            "text": "\\textepsilon "
         }
     },
     {
@@ -653,7 +694,7 @@
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\zeta"
+            "text": "\\zeta "
         }
     },
     {
@@ -661,7 +702,7 @@
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\textZeta"
+            "text": "\\textzeta "
         }
     },
     {
@@ -669,7 +710,7 @@
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\eta"
+            "text": "\\eta "
         }
     },
     {
@@ -677,7 +718,7 @@
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\textEta"
+            "text": "\\texteta "
         }
     },
     {
@@ -685,7 +726,7 @@
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\theta"
+            "text": "\\theta "
         }
     },
     {
@@ -693,7 +734,7 @@
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\textTheta"
+            "text": "\\texttheta "
         }
     },
     {
@@ -701,7 +742,7 @@
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\iota"
+            "text": "\\iota "
         }
     },
     {
@@ -709,7 +750,7 @@
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\textIota"
+            "text": "\\textiota "
         }
     },
     {
@@ -717,7 +758,7 @@
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\kappa"
+            "text": "\\kappa "
         }
     },
     {
@@ -725,7 +766,7 @@
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\textKappa"
+            "text": "\\textkappa "
         }
     },
     {
@@ -733,7 +774,7 @@
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\lambda"
+            "text": "\\lambda "
         }
     },
     {
@@ -741,7 +782,7 @@
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\textLambda"
+            "text": "\\textlambda "
         }
     },
     {
@@ -749,7 +790,7 @@
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\mu"
+            "text": "\\mu "
         }
     },
     {
@@ -757,7 +798,7 @@
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\textMu"
+            "text": "\\textmu "
         }
     },
     {
@@ -765,7 +806,7 @@
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\nu"
+            "text": "\\nu "
         }
     },
     {
@@ -773,7 +814,7 @@
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\textNu"
+            "text": "\\textnu "
         }
     },
     {
@@ -781,7 +822,7 @@
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\zi"
+            "text": "\\zi "
         }
     },
     {
@@ -789,7 +830,7 @@
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\textZi"
+            "text": "\\textzi "
         }
     },
     {
@@ -797,7 +838,7 @@
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\omnicron"
+            "text": "\\omnicron "
         }
     },
     {
@@ -805,7 +846,7 @@
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\textOmnicron"
+            "text": "\\textomnicron "
         }
     },
     {
@@ -813,7 +854,7 @@
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\pi"
+            "text": "\\pi "
         }
     },
     {
@@ -821,7 +862,7 @@
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\textPi"
+            "text": "\\textpi "
         }
     },
     {
@@ -829,7 +870,7 @@
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\rho"
+            "text": "\\rho "
         }
     },
     {
@@ -837,7 +878,7 @@
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\textRho"
+            "text": "\\textrho "
         }
     },
     {
@@ -845,7 +886,7 @@
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\sigma"
+            "text": "\\sigma "
         }
     },
     {
@@ -853,7 +894,7 @@
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\textSigma"
+            "text": "\\textsigma "
         }
     },
     {
@@ -861,7 +902,7 @@
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\tau"
+            "text": "\\tau "
         }
     },
     {
@@ -869,7 +910,7 @@
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\textTau"
+            "text": "\\texttau "
         }
     },
     {
@@ -877,7 +918,7 @@
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\upsilon"
+            "text": "\\upsilon "
         }
     },
     {
@@ -885,7 +926,7 @@
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\textUpsilon"
+            "text": "\\textupsilon "
         }
     },
     {
@@ -893,7 +934,7 @@
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\phi"
+            "text": "\\phi "
         }
     },
     {
@@ -901,7 +942,7 @@
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\textPhi"
+            "text": "\\textphi "
         }
     },
     {
@@ -909,7 +950,7 @@
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\chi"
+            "text": "\\chi "
         }
     },
     {
@@ -917,7 +958,7 @@
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\textChi"
+            "text": "\\textchi "
         }
     },
     {
@@ -925,7 +966,7 @@
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\psi"
+            "text": "\\psi "
         }
     },
     {
@@ -933,7 +974,7 @@
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\textPsi"
+            "text": "\\textpsi "
         }
     },
     {
@@ -941,7 +982,7 @@
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\omega"
+            "text": "\\omega "
         }
     },
     {
@@ -949,7 +990,7 @@
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
-            "text": "\\textOmega"
+            "text": "\\textomega "
         }
     }
 ]
