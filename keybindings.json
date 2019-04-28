@@ -74,6 +74,96 @@
             "snippet": "\\text{${1:${TM_SELECTED_TEXT:text}}}"
         }
     },
+    // font change snippets
+    {
+        "key": "ctrl+l r",
+        "when": "editorTextFocus && !editorReadonly && editorLangId == 'latex'",
+        "command": "editor.action.insertSnippet",
+        "args": {
+            "snippet": "\\rmfamily"
+        }
+    },
+    {
+        "key": "ctrl+l s",
+        "when": "editorTextFocus && !editorReadonly && editorLangId == 'latex'",
+        "command": "editor.action.insertSnippet",
+        "args": {
+            "snippet": "\\sffamily"
+        }
+    },
+    {
+        "key": "ctrl+l t",
+        "when": "editorTextFocus && !editorReadonly && editorLangId == 'latex'",
+        "command": "editor.action.insertSnippet",
+        "args": {
+            "snippet": "\\ttfamily"
+        }
+    },
+    {
+        "key": "ctrl+l m",
+        "when": "editorTextFocus && !editorReadonly && editorLangId == 'latex'",
+        "command": "editor.action.insertSnippet",
+        "args": {
+            "snippet": "\\mdseries"
+        }
+    },
+    {
+        "key": "ctrl+l b",
+        "when": "editorTextFocus && !editorReadonly && editorLangId == 'latex'",
+        "command": "editor.action.insertSnippet",
+        "args": {
+            "snippet": "\\bfseries"
+        }
+    },
+    {
+        "key": "ctrl+l i",
+        "when": "editorTextFocus && !editorReadonly && editorLangId == 'latex'",
+        "command": "editor.action.insertSnippet",
+        "args": {
+            "snippet": "\\itshape"
+        }
+    },
+    {
+        "key": "ctrl+l u",
+        "when": "editorTextFocus && !editorReadonly && editorLangId == 'latex'",
+        "command": "editor.action.insertSnippet",
+        "args": {
+            "snippet": "\\upshape"
+        }
+    },
+    {
+        "key": "ctrl+l l",
+        "when": "editorTextFocus && !editorReadonly && editorLangId == 'latex'",
+        "command": "editor.action.insertSnippet",
+        "args": {
+            "snippet": "\\slshape"
+        }
+    },
+    {
+        "key": "ctrl+l c",
+        "when": "editorTextFocus && !editorReadonly && editorLangId == 'latex'",
+        "command": "editor.action.insertSnippet",
+        "args": {
+            "snippet": "\\scshape"
+        }
+    },
+    {
+        "key": "ctrl+l e",
+        "when": "editorTextFocus && !editorReadonly && editorLangId == 'latex'",
+        "command": "editor.action.insertSnippet",
+        "args": {
+            "snippet": "\\em"
+        }
+    },
+    {
+        "key": "ctrl+l n",
+        "when": "editorTextFocus && !editorReadonly && editorLangId == 'latex'",
+        "command": "editor.action.insertSnippet",
+        "args": {
+            "snippet": "\\normalfont"
+        }
+    },
+
     // Math operation(s)
     {
         "key": "ctrl+m ctrl+f",
