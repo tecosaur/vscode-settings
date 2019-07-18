@@ -10,6 +10,32 @@
         "command": "workbench.action.tasks.build",
         "when": "editorTextFocus && editorLangId == 'cpp'"
     },
+
+    {
+        "key": "ctrl+j ctrl+w",
+        "command": "extension.jumpy-word",
+        "when": "editorTextFocus && !jumpy.isJumpyMode"
+    },
+    {
+        "key": "ctrl+j ctrl+w",
+        "command": "extension.jumpy-exit",
+        "when": "editorTextFocus && jumpy.isJumpyMode"
+    },
+    {
+        "key": "ctrl+j ctrl+l",
+        "command": "extension.jumpy-line",
+        "when": "editorTextFocus && !jumpy.isJumpyMode"
+    },
+    {
+        "key": "ctrl+j ctrl+l",
+        "command": "extension.jumpy-exit",
+        "when": "editorTextFocus && jumpy.isJumpyMode"
+    },
+    // {
+    //     "key": "Escape",
+    //     "command": "extension.jumpy-exit",
+    //     "when": "editorTextFocus && jumpy.isJumpyMode"
+    // },
     //
     {
         "key": "cmd+]",
@@ -289,6 +315,14 @@
         }
     },
     {
+        "key": "alt+\\",
+        "command": "type",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "text": "\\\\\n"
+        }
+    },
+    {
         "key": "oem_3 shift+oem_3", // `~
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
@@ -518,6 +552,14 @@
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
             "snippet": "\\vec{${1:${TM_SELECTED_TEXT}}}$0"
+        }
+    },
+    {
+        "key": "oem_3 a",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "snippet": "\\abs{${1:${TM_SELECTED_TEXT}}}$0"
         }
     },
     {
@@ -992,5 +1034,10 @@
         "args": {
             "text": "\\textomega "
         }
+    },
+    {
+        "key": "shift+backspace",
+        "command": "-metaGo.delete.softDelete",
+        "when": "editorTextFocus"
     }
 ]

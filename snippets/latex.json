@@ -30,9 +30,34 @@
         "body": ["\\begin{tabular}{$1}", "${1:${CLIPBOARD/[\\t]/ & /g}/a/b/g}\\end{tabular}$0"]
         // {${1/void$|(.+)/${1:+\n\treturn nil;}/}
     },
+    "pgfplot template": {
+        "prefix": "@plot",
+        "body": [
+            "\\begin{tikzpicture}",
+            "\t\\begin{axis}[",
+            "\t\t\txlabel=${1:x-axis},",
+            "\t\t\tylabel=${2:y-axis},",
+            "\t\t\t% ymin=0,",
+            "\t\t\t% ymax=1,",
+            "\t\t\t% mark options={scale=2},",
+            "\t\t\t% domain=0:1,",
+            "\t\t]",
+            "\t\t\\addplot+[]{${3:formula}};",
+            "\t\\end{axis}",
+            "\\end{tikzpicture}",
+            "$0"
+        ],
+        "description": "pgfplot for use with bmc"
+    },
     "new glossary entry": {
         "prefix": "\\newglossaryentry",
-        "body": ["\\newglossaryentry{${1:reference name}}", "{", "\tname=${2:display name},", "\tdescription={${3:description}}", "}$0"]
+        "body": [
+            "\\newglossaryentry{${1:reference name}}",
+            "{",
+            "\tname=${2:display name},",
+            "\tdescription={${3:description}}",
+            "}$0"
+        ]
     },
     "doctemp - bmc": {
         "prefix": "doctemp",
@@ -41,7 +66,7 @@
             "",
             "\\titlehead{${1:TEC}}",
             "\\title{${2:Title}}",
-            "\\subtitle{${3:Subtitle}",
+            "\\subtitle{${3:Subtitle}}",
             "\\author{${4:Timothy E. Chapman}}",
             "",
             "\\begin{document}",
@@ -182,7 +207,10 @@
     },
     "2x5 grid": {
         "prefix": "g2x5",
-        "body": [" ${1: } & ${2: } & ${3: } & ${4: } & ${5: } \\\\\\\\", " ${6: } & ${7: } & ${8: } & ${9: } & ${10: }$0"],
+        "body": [
+            " ${1: } & ${2: } & ${3: } & ${4: } & ${5: } \\\\\\\\",
+            " ${6: } & ${7: } & ${8: } & ${9: } & ${10: }$0"
+        ],
         "description": "inserts blank grid of size 2x5."
     },
     "2x6 grid": {
@@ -237,7 +265,11 @@
     },
     "3x3 grid": {
         "prefix": "g3x3",
-        "body": [" ${1: } & ${2: } & ${3: } \\\\\\\\", " ${4: } & ${5: } & ${6: } \\\\\\\\", " ${7: } & ${8: } & ${9: }$0"],
+        "body": [
+            " ${1: } & ${2: } & ${3: } \\\\\\\\",
+            " ${4: } & ${5: } & ${6: } \\\\\\\\",
+            " ${7: } & ${8: } & ${9: }$0"
+        ],
         "description": "inserts blank grid of size 3x3."
     },
     "3x4 grid": {
@@ -310,7 +342,12 @@
     },
     "4x2 grid": {
         "prefix": "g4x2",
-        "body": [" ${1: } & ${2: } \\\\\\\\", " ${3: } & ${4: } \\\\\\\\", " ${5: } & ${6: } \\\\\\\\", " ${7: } & ${8: }$0"],
+        "body": [
+            " ${1: } & ${2: } \\\\\\\\",
+            " ${3: } & ${4: } \\\\\\\\",
+            " ${5: } & ${6: } \\\\\\\\",
+            " ${7: } & ${8: }$0"
+        ],
         "description": "inserts blank grid of size 4x2."
     },
     "4x3 grid": {
@@ -499,7 +536,14 @@
     },
     "6x1 grid": {
         "prefix": "g6x1",
-        "body": [" ${1: } \\\\\\\\", " ${2: } \\\\\\\\", " ${3: } \\\\\\\\", " ${4: } \\\\\\\\", " ${5: } \\\\\\\\", " ${6: }$0"],
+        "body": [
+            " ${1: } \\\\\\\\",
+            " ${2: } \\\\\\\\",
+            " ${3: } \\\\\\\\",
+            " ${4: } \\\\\\\\",
+            " ${5: } \\\\\\\\",
+            " ${6: }$0"
+        ],
         "description": "inserts blank grid of size 6x1."
     },
     "6x2 grid": {
