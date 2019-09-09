@@ -24,6 +24,7 @@
     "editor.formatOnSave": true,
     "editor.emptySelectionClipboard": false,
     "editor.wordSeparators": "`-~!@#$%^&*()=+[\\{]\\}\\|;:'\",.<>/?",
+    "editor.renderWhitespace": "selection",
     "explorer.confirmDragAndDrop": false,
     "explorer.confirmDelete": false,
     "files.exclude": {
@@ -77,7 +78,8 @@
         "editor.fontWeight": "400",
         "editor.fontLigatures": true,
         "editor.letterSpacing": 0.15,
-        "editor.suggest.snippetsPreventQuickSuggestions": false
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        "editor.rulers": [65]
     },
     "bracket-pair-colorizer-2.excludedLanguages": ["latex"],
     "[markdown]": {
@@ -217,8 +219,8 @@
     "todo.embedded.providers.ag.regex": "(?:#|//|/\\*+|<!—|—|%) *(TODO|FIXME|FIX|BUG|UGLY|HACK|NOTE|IDEA|REVIEW|DEBUG|OPTIMIZE|MISSING|ADD)",
     "latex-workshop.chktex.enabled": true,
     "latex-workshop.chktex.run": "onType",
-    "latex-workshop.chktex.args.active": ["-wall", "-n22", "-n30", "-e16", "-q", "-n1", "-n24"],
-    "latex-workshop.chktex.args.root": ["-wall", "-n22", "-n30", "-e16", "-q", "-n1", "-n24"],
+    "latex-workshop.chktex.args.active": ["-wall", "-n22", "-n30", "-e16", "-q", "-n1", "-n24", "-n11"],
+    "latex-workshop.chktex.args.root": ["-wall", "-n22", "-n30", "-e16", "-q", "-n1", "-n24", "-n11"],
     "latex-workshop.hover.preview.cursor.symbol": "\\!|\\!",
     "latex-workshop.hover.preview.cursor.color": "gray",
     "latex-workshop.hover.preview.cursor.enabled": true,
@@ -228,8 +230,36 @@
     "latex-workshop.latex.texDirs": ["~/texmf/tex/latex/bmc"],
     "latex-workshop.hover.preview.newcommand.newcommandFile": "/home/tec/texmf/tex/latex/bmc/packages_and_commands.tex",
     "latex-workshop.latex.autoBuild.run": "onFileChange",
-    "latex-workshop.tikzpreview.delay": 10,
-    "latex-workshop.tikzpreview.preambleContents": "/home/tec/texmf/tex/latex/bmc/lw_tikz_preamble.tex",
+    "latex-utilities.tikzpreview.delay": 10,
+    "latex-utilities.tikzpreview.preambleContents": "/home/tec/texmf/tex/latex/bmc/lw_tikz_preamble.tex",
+    "latex-utilities.formattedPaste.image.template": [
+        "\\begin{figure}[!htb]",
+        "\t\\centering",
+        "\t\\includegraphics[$1]{${imageFilePath}}",
+        "\t\\caption{${imageFileNameWithoutExt/[-]/ /}}",
+        "\t\\label{fig:${imageFileNameWithoutExt}",
+        "\\end{figure}",
+        ""
+    ],
+    "latex-workshop.intellisense.package.extra": [
+        "tikz",
+        "hyperref",
+        "tabularx",
+        "xcolor",
+        "amsmath",
+        "amssymb",
+        "xfrac",
+        "cancel",
+        "mathtools",
+        "pgfplots",
+        "booktabs",
+        "longtable",
+        "multicol",
+        "graphicx",
+        "caption",
+        "subcaption",
+        "minted"
+    ],
     "latex-workshop.latex.tools": [
         {
             "name": "latexmk",
@@ -284,7 +314,7 @@
     "latex-workshop.latex.recipes": [
         {
             "name": " 🔃   latexmk",
-            "tools": ["latexmk", "compress"]
+            "tools": ["latexmk"]//, "compress"]
         },
         {
             "name": "$(link)   precompile preamble",
@@ -419,6 +449,16 @@
     "prettier.singleQuote": true,
     "prettier.tslintIntegration": true,
 
+    "tabnine.disable_file_regex": [
+        "\\.out",
+        "\\.pdf",
+        "\\.aux",
+        "\\.fmt",
+        "\\.toc",
+        "\\.ptc",
+        "\\.log"
+    ],
+
     "cSpell.language": "en-GB",
     "cSpell.ignoreRegExpList": [
         "\\\\cite{[A-Za-z0-9, -]+}",
@@ -474,10 +514,12 @@
 
     "errorLens.warningColor": "rgba(253,215,108,0.1)",
     "errorLens.warningTextColor": "rgba(240,240,240,0.5)",
-    "errorLens.infoColor": "rgba(120,220,232,0.1)",
+    "errorLens.infoColor": "rgba(120,220,232,0.05)",
     "errorLens.infoTextColor": "rgba(240,240,240,0.5)",
     "errorLens.errorColor": "rgba(255,65,86,0.4)",
     "errorLens.errorTextColor": "rgba(240,240,240,0.8)",
+
+    "eslint.validate": ["javascript", "javascriptreact", "typescript"],
 
     "code-runner.executorMapByFileExtension": {
         ".vb": "cd $dir && vbc /nologo $fileName && $dir$fileNameWithoutExt",
@@ -941,8 +983,15 @@
     "diffEditor.ignoreTrimWhitespace": true,
     "prettier.printWidth": 120,
     "prettier.tabWidth": 4,
-    "latex-workshop.tikzpreview.enabled": false,
     "[html]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
+    },
+    "telemetry.enableTelemetry": false,
+    "gitlens.advanced.telemetry.enabled": false,
+    "prettier.eslintIntegration": true,
+    "prettier.semi": false,
+    "latex-utilities.liveReformat.enabled": true,
+    "liveshare.featureSet": "insiders",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "latex-utilities.zotero.citeMethod": "vscode"
 }
