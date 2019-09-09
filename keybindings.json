@@ -242,11 +242,27 @@
         }
     },
     {
+        "key": "oem_3 a", // `^
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "snippet": "\\\\abs{${1:${TM_SELECTED_TEXT}}}"
+        }
+    },
+    {
         "key": "oem_3 i",
         "command": "type",
         "when": "editorTextFocus && editorLangId == 'latex'",
         "args": {
             "text": "\\implies "
+        }
+    },
+    {
+        "key": "oem_3 t",
+        "command": "type",
+        "when": "editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "text": "\\therefore "
         }
     },
     // Maths Synbols
